@@ -24,7 +24,9 @@ body {
 
 .left {
     background-image: url("images/coffee.png");
-    background-size: contain; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 335px;
 }
 
 .bar {
@@ -35,5 +37,6 @@ body {
     height: 100px;
     text-align: center;
     line-height: 100px;
-    font-size: 4rem;
+    font-size: 3rem;
+    white-space: nowrap;
 }
