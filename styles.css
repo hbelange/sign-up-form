@@ -3,3 +3,37 @@
     src: url('fonts/Norse-Bold.otf');
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.left {
+    flex: 1;
+}
+
+.right {
+    flex: 2;
+}
+
+.left, .right {
+    height: 100vh;
+}
+
+
+.left {
+    background-image: url("images/coffee.png");
+    background-size: contain; 
+}
+
+.bar {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: 'Norse-Bold';
+    margin-top: 250px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 4rem;
+}
