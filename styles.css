@@ -61,3 +61,22 @@ body {
 .bottom-text {
     padding-top: 40px;
 }
+
+.middle {
+    height: calc(100vh - 225px - 200px);
+}
+
+.bottom {
+    height: 200px;
+    padding: 45px;
+}
+
+button {
+    background-color: #CC7F3B;
+    font-size: 1.3em;
+    color: white;
+    border: #CC7F3B;
+    padding: 15px 45px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
