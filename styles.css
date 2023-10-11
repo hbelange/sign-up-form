@@ -44,9 +44,20 @@ body {
 }
 
 .top {
-    height: 260px;
-    padding: 45px;
+    font-size: 1.7rem;
+    height: 225px;
+    padding: 45px 150px 45px 45px;
     display: flex;
     flex-direction: column;
     justify-content: end;
+    min-width: 300px;
+    background-color: #EBEBEB;
+}
+
+.top-text {
+    max-width: 1000px;
+}
+
+.bottom-text {
+    padding-top: 40px;
 }
