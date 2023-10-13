@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -26,7 +26,7 @@
             <div class="middle-header">
                 Let's do this!
             </div>
-            <form method="post">
+            <form method="post" id="sign-up">
                 <div>
                     <label for="firstName">First Name</label>
                     <input required type="text" id="firstName" name="firstName">
@@ -36,15 +36,25 @@
                 <div>
                     <label for="email">Email</label>
                     <input required type="email" name="userEmail" id="email">
-                    <span id="wrong-pass"></span>
+                    
                     <label for="phone">Phone Number</label>
                     <input type="tel" id="phone" name="phoneNumber">
                 </div>
-
+                <div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input required type="password" id="password" name="password">
+                        <span id="wrong-pass"></span>
+                    </div>
+                    <div>
+                        <label for="confirm-password">Confirm Password</label>
+                        <input required type="password" id="confirm-password" name="confirm-password">
+                    </div>
+                </div>
             </form>
         </div>
         <div class="bottom">
-            <button>Create Account</button>
+            <button type="submit" form="sign-up">Create Account</button>
             <div class="login"></div>
         </div>
     </div>
