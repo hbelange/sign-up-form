@@ -7,10 +7,16 @@ let checkPassword = () => {
     if (password.value !== confirmPassword.value) {
         errorSpan.textContent = "Passwords do not match";
         submitButton.disabled = true;
+        password.classList.add("passError");
+        confirmPassword.classList.add("passError");
     }
     else {
         errorSpan.textContent = "";
         submitButton.disabled = false;
+        password.classList.remove("passError");
+        password.classList.add("match");
+        confirmPassword.classList.remove("passError");
+        confirmPassword.classList.add("match");
     }
 }
 
