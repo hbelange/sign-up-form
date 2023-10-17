@@ -7,6 +7,8 @@ let checkPassword = () => {
     if (password.value !== confirmPassword.value) {
         errorSpan.textContent = "Passwords do not match";
         submitButton.disabled = true;
+        password.classList.remove("match");
+        confirmPassword.classList.remove("match");
         password.classList.add("passError");
         confirmPassword.classList.add("passError");
     }

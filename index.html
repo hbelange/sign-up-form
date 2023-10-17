@@ -28,25 +28,32 @@
             </div>
             <form method="post" id="sign-up">
                 <div class="names">
-                    <label for="firstName">First Name</label>
-                    <input required type="text" id="firstName" name="firstName">
-                    <label for="lastName">Last Name</label>
-                    <input required type="text" id="lastName" name="lastName">
+                    <div class="input">
+                        <label for="firstName">First Name</label>
+                        <input required type="text" id="firstName" name="firstName">
+                    </div>
+                    <div class="input">
+                        <label for="lastName">Last Name</label>
+                        <input required type="text" id="lastName" name="lastName">
+                    </div>
                 </div>
                 <div class="contact">
-                    <label for="email">Email</label>
-                    <input required type="email" name="userEmail" id="email">
-                    
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phoneNumber">
+                    <div class="input">
+                        <label for="email">Email</label>
+                        <input required type="email" name="userEmail" id="email">
+                    </div>
+                    <div class="input">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phoneNumber">
+                    </div>
                 </div>
-                <div>
-                    <div>
+                <div class="passwords">
+                    <div class="input">
                         <label for="password">Password</label>
                         <input required type="password" id="password" name="password">
                         <span id="wrong-pass"></span>
                     </div>
-                    <div>
+                    <div class="input">
                         <label for="confirm-password">Confirm Password</label>
                         <input required type="password" id="confirm-password" name="confirm-password">
                     </div>
